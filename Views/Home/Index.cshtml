@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Anasayfa";
+}
+
+<form id="filmForm" autocomplete="off">
+    <div class="mb-3">
+        <input type="text" name="Name" class="form-control" placeholder="Film Adı">
+    </div>
+    <div class="mb-3">
+        <input type="text" name="Topic" class="form-control" placeholder="Film Konusu">
+    </div>
+    <div class="mb-3">
+        <input type="text" name="Category" class="form-control" placeholder="Film Kategorisi">
+    </div>
+    <div class="mb-3">
+        <input type="text" name="Rate" class="form-control" placeholder="Film Puanı">
+        <small>1-10 arasında puan verebilirsiniz.</small>
+    </div>
+    <div class="mb-3">
+        <input type="text" name="ImgUrl" class="form-control" placeholder="Fotoğraf URL">
+    </div>
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+
+<hr>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Film Adı</th>
+                <th>Film Konusu</th>
+                <th>Film Kategorisi</th>
+                <th>Film Puanı</th>
+                <th>Film Fotoğrafı</th>
+            </tr>
+        </thead>
+        <tbody id="filmList"></tbody>
+    </table>
+</div>
